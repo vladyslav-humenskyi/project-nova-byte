@@ -1,18 +1,16 @@
-.events {
-}
 .events-title {
   margin-bottom: 8px;
 }
 .events-text {
   margin-bottom: 32px;
 }
-.events-list {
-}
-
 .events-item {
   display: flex;
   flex-direction: column;
-  width: 335px;
+  padding: 12px;
+
+  border: 1px solid #dbdada;
+  border-radius: 28px;
 }
 
 .events-item:not(:last-child) {
@@ -25,50 +23,39 @@
   }
 }
 
-@media only screen and (max-width: 767.98px) {
-  .events-item {
-    padding: 12px;
-
-    border: 1px solid #dbdada;
-    border-radius: 28px;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .events-item {
     align-items: center;
     justify-content: center;
-    min-width: 704px;
     flex-direction: row;
+
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+
     border-top: 1px solid #dbdada;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .events-item {
-    min-width: 1312px;
     justify-content: flex-start;
   }
 }
 
 .events-img {
   display: block;
-  width: 100%;
+  width: 311px;
   height: 225px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 16px;
-}
 
-@media only screen and (max-width: 767.98px) {
-  .events-img {
-    min-width: 311px;
-  }
+  object-fit: cover;
+  object-position: top;
+  border-radius: 16px;
 }
 
 @media only screen and (min-width: 768px) {
   .events-img {
-    width: 144px;
+    max-width: 144px;
     height: 144px;
     margin: 8px 0;
   }
@@ -93,6 +80,7 @@
   .events-details {
     justify-content: space-between;
     width: 100%;
+    gap: 0;
   }
 }
 
@@ -131,6 +119,12 @@
 @media only screen and (min-width: 768px) {
   .events-list-link-wrapper {
     margin-bottom: 4px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .events-list-link-wrapper {
+    margin-bottom: 0;
   }
 }
 
@@ -182,6 +176,23 @@
 
   border: 1px solid rgba(12, 7, 8, 0.15);
   border-radius: 100px;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+}
+
+.events-list-btn:hover {
+  opacity: 0.5;
+}
+
+.events-list-btn:active {
+  opacity: 0.7;
+}
+
+.events-list-btn.is-disabled {
+  opacity: 0.7;
+  cursor: default;
+  pointer-events: none;
 }
 
 @media only screen and (min-width: 768px) {
