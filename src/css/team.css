@@ -34,12 +34,6 @@
   font-size: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
-  .team-section {
-    padding-bottom: 91px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .team-list {
     row-gap: 80px;
