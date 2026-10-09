@@ -1,0 +1,92 @@
+.hero .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero .container {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+
+.hero-title {
+font-family: "Caveat", sans-serif;
+font-weight: 700;
+font-size: 40px;
+line-height: 1;
+letter-spacing: -0.01em;
+margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+  }
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-buttons {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-buttons {
+    gap: 16px;
+  }
+}
+
+.hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffb780;
+    border-radius: 100px;
+    padding: 10px 24px;
+    background: #ffb780;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 335px;
+    white-space: nowrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-button {
+    width: 159px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-button {
+    width: 105px;
+  }
+}
+
+.hero-button-accent {
+    background-color: transparent;
+    border: 1px solid rgba(12, 7, 8, 0.15);
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-button-accent {
+    width: 127px;
+  }
+}
