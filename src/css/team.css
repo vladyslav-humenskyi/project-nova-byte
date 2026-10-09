@@ -1,10 +1,12 @@
-.team-section-title {
+.team-section {
   text-align: center;
+}
+
+.team-section-title {
   margin-bottom: 24px;
 }
 
 .team-text {
-  text-align: center;
   margin-bottom: 40px;
 }
 
@@ -30,17 +32,17 @@
 .team-card-name {
   font-weight: 700;
   font-size: 20px;
-  text-align: center;
 }
 
-.team-role {
-  text-align: center;
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .team-section {
+    padding-bottom: 91px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .team-list {
     row-gap: 80px;
-    padding-bottom: 27px;
   }
 
   .team-card {
@@ -51,11 +53,9 @@
 @media screen and (min-width: 1440px) {
   .team-list {
     gap: 32px;
-    padding-bottom: 0;
   }
 
   .team-card {
     width: calc((100% - 5 * 32px) / 6);
-    padding-bottom: 0;
   }
 }
