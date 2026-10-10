@@ -1,5 +1,5 @@
 <section class="section hero">
-  <div class="container">
+  <div class="container hero-container">
     <div class="hero-content">
       <h1 class="hero-title">Unleash Your Creativity in Nature's Embrace</h1>
       <p class="hero-text">
@@ -15,11 +15,18 @@
     <img
       class="hero-image"
       srcset="
-        ../img/hero-img/hero-image.jpg    1x,
-        ../img/hero-img/hero-image@2x.jpg 2x
+        ./img/hero-img/hero-image-desk.jpg     857w,
+        ./img/hero-img/hero-image-desk@2x.jpg 1714w,
+        ./img/hero-img/hero-image-tab.jpg      704w,
+        ./img/hero-img/hero-image-tab@2x.jpg  1408w,
+        ./img/hero-img/hero-image-mob.jpg      335w,
+        ./img/hero-img/hero-image-mob@2x.jpg   670w
       "
-      src="../img/hero-img/hero-image.jpg"
-      alt=""
+      src="./img/hero-img/hero-image-desk.jpg"
+      alt="Watercolor illustration of cozy houses among autumn trees and flowers"
+      width="857"
+      height="659"
+      sizes="(min-width: 1440px) 857px, (min-width: 768px) 704px, calc(100vw - 40px)"
     />
   </div>
 </section>
