@@ -1,0 +1,71 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.register-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.register-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.register-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid rgba(12, 7, 8, 0.15);
+  border-radius: 12px;
+  background-color: rgba(12, 7, 8, 0.05);
+  font-size: 14px;
+  color: #0c0708;
+}
+
+.register-textarea {
+  height: 180px;
+  padding: 12px;
+  resize: none;
+}
+
+.register-btn {
+  height: 44px;
+  padding: 10px 24px;
+  border: 1px solid #ffb780;
+  border-radius: 100px;
+  background-color: #ffb780;
+  font-size: 14px;
+  color: #0c0708;
+  cursor: pointer;
+}
+
+.register-img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .register-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .register-content,
+  .register-img {
+    width: calc((100% - 64px) / 2);
+  }
+}
