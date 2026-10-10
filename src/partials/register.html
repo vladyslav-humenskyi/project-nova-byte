@@ -1,1 +1,80 @@
-<section class=""></section>
+<section class="register section" id="register">
+  <div class="container register-container">
+    <div class="register-content">
+      <h2 class="register-title section-title">Register</h2>
+
+      <form class="register-form" name="register-form" autocomplete="on">
+        <div class="register-field">
+          <label class="register-label" for="register-name">Name*</label>
+          <input
+            class="register-input"
+            type="text"
+            id="register-name"
+            name="user-name"
+            placeholder="Emma"
+            autocomplete="name"
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+            title="5–64 Latin letters, spaces or dots"
+            required
+          />
+        </div>
+
+        <div class="register-field">
+          <label class="register-label" for="register-email">Email*</label>
+          <input
+            class="register-input"
+            type="email"
+            id="register-email"
+            name="user-email"
+            placeholder="hello@wildsketch.com"
+            autocomplete="email"
+            pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+            title="Email in the format name@example.com"
+            required
+          />
+        </div>
+
+        <div class="register-field">
+          <label class="register-label" for="register-comment"
+            >Describe your skills</label
+          >
+          <textarea
+            class="register-input register-textarea"
+            id="register-comment"
+            name="user-comment"
+            placeholder="Type your skills..."
+            maxlength="500"
+          ></textarea>
+        </div>
+
+        <button class="register-btn" type="submit">Register</button>
+      </form>
+    </div>
+
+    <picture class="register-picture">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ./img/register/register-desk.jpg    1x,
+          ./img/register/register-desk@2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/register/register-tab.jpg    1x,
+          ./img/register/register-tab@2x.jpg 2x
+        "
+      />
+      <img
+        class="register-img"
+        src="./img/register/register-mob.jpg"
+        srcset="./img/register/register-mob@2x.jpg 2x"
+        alt="Girl painting at an easel during an outdoor art class in a park"
+        width="335"
+        height="286"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>
