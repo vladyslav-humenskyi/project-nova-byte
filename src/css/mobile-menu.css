@@ -30,14 +30,14 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 7px 12px 0 20px;
+  padding: 0 12px 0 20px;
 }
 
 .mobile-menu-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 57px;
+  min-height: 64px;
   flex-shrink: 0;
 }
 
@@ -99,12 +99,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-  width: 97px;
-  height: 40px;
   flex-shrink: 0;
   white-space: nowrap;
-  padding: 8px 20px;
+  padding: 7px 19px;
   border: 1px solid #ffb780;
   border-radius: 100px;
   background-color: #ffb780;
