@@ -46,17 +46,37 @@
       </form>
     </div>
 
-    <img
-      class="register-img"
-      src="./img/register-img/register-mob.jpg"
-      srcset="
-        ./img/register-img/register-mob.jpg    1x,
-        ./img/register-img/register-mob@2x.jpg 2x
-      "
-      alt="Girl painting outdoors at an easel"
-      width="335"
-      height="286"
-      loading="lazy"
-    />
+    <picture class="register-picture">
+      <source
+        media="(min-width: 1440px)"
+        width="640"
+        height="734"
+        srcset="
+          ./img/register-img/register-desk.jpg    1x,
+          ./img/register-img/register-desk@2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        width="704"
+        height="362"
+        srcset="
+          ./img/register-img/register-tab.jpg    1x,
+          ./img/register-img/register-tab@2x.jpg 2x
+        "
+      />
+      <img
+        class="register-img"
+        src="./img/register-img/register-mob.jpg"
+        srcset="
+          ./img/register-img/register-mob.jpg    1x,
+          ./img/register-img/register-mob@2x.jpg 2x
+        "
+        alt="Girl painting outdoors at an easel"
+        width="335"
+        height="286"
+        loading="lazy"
+      />
+    </picture>
   </div>
 </section>

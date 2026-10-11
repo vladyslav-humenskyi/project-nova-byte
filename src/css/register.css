@@ -71,16 +71,9 @@
 }
 
 .register-img {
+  display: block;
   width: 100%;
-  aspect-ratio: 335 / 286;
-  object-fit: cover;
-  border-radius: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  .register-img {
-    aspect-ratio: 704 / 362;
-  }
+  height: auto;
 }
 
 @media screen and (min-width: 1440px) {
@@ -94,13 +87,9 @@
   }
 
   .register-content,
-  .register-img {
+  .register-picture {
     flex: 1;
     min-width: 0;
-  }
-
-  .register-img {
-    aspect-ratio: 640 / 734;
   }
 
   .register-btn {
