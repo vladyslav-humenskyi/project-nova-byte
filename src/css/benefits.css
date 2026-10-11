@@ -1,40 +1,44 @@
-.benefits-container {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.benefits-image {
-  width: 100%;
-  border-radius: 24px;
+.benefits {
+  padding: 40px 0;
 }
 
 .benefits-title {
   margin-bottom: 32px;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .benefits-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
+  margin-bottom: 32px;
+  padding: 8px 0;
 }
 
 .benefits-item {
-  padding: 32px;
-  border: 1px solid rgba(12, 7, 8, 0.15);
-  border-radius: 16px;
-  background-color: #fff7f2;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .benefits-icon {
-  display: block;
-  margin-bottom: 24px;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
 }
 
-.benefits-subtitle {
-  margin-bottom: 8px;
-  font-size: 20px;
-  line-height: 1.5;
+.benefits-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.benefits-heading {
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .benefits-text {
@@ -42,43 +46,57 @@
   line-height: 1.5;
 }
 
+.benefits-image {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
-  .benefits-container {
-    gap: 40px;
+  .benefits-title {
+    max-width: 450px;
   }
 
   .benefits-list {
-    flex-direction: row;
-    flex-wrap: wrap;
+    max-width: 612px;
   }
 
-  .benefits-item {
-    width: calc((100% - 24px) / 2);
-  }
-
-  .benefits-item:last-child {
-    width: 100%;
+  .benefits-image {
+    max-width: 522px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .benefits-container {
-    flex-direction: row;
-    align-items: center;
-    gap: 80px;
+  .benefits {
+    padding: 112px 0;
   }
 
-  .benefits-container picture,
-  .benefits-content {
-    width: calc((100% - 80px) / 2);
+  .benefits-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'image .'
+      'image title'
+      'image list'
+      'image .';
+    grid-template-rows: 1fr auto auto 1fr;
+    column-gap: 80px;
   }
 
   .benefits-title {
-    margin-bottom: 80px;
+    grid-area: title;
   }
 
-  .benefits-item,
-  .benefits-item:last-child {
-    width: calc((100% - 48px) / 3);
+  .benefits-list {
+    grid-area: list;
+    margin-bottom: 0;
+  }
+
+  .benefits-picture {
+    grid-area: image;
+  }
+
+  .benefits-image {
+    max-width: none;
+    margin: 0;
   }
 }
